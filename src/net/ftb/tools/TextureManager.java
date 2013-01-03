@@ -23,6 +23,7 @@ import net.ftb.data.Settings;
 import net.ftb.data.TexturePack;
 import net.ftb.gui.LaunchFrame;
 import net.ftb.log.Logger;
+import net.ftb.tracking.JGoogleAnalyticsTracker;
 import net.ftb.util.DownloadUtils;
 import net.ftb.util.FileUtils;
 import net.ftb.util.OSUtils;
@@ -37,6 +38,7 @@ public class TextureManager extends JDialog {
 	public static boolean overwrite = false;
 	private static String sep = File.separator;
 	public static String installDir = "FTBBETAA";
+	public static JGoogleAnalyticsTracker tracker;
 
 	private class TexturePackManagerWorker extends SwingWorker<Boolean, Void> {
 		@Override
